@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O nama — MBS Spektrum</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo"><img src="assets/logo.png" alt="MBS Spektrum"><div><div>MBS SPEKTRUM</div><div class="nav__logo-sub">Zaštita od požara od 1992.</div></div></a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Početna</a>
+      <a href="usluge.html" class="nav__link">Usluge</a>
+      <a href="projekti.html" class="nav__link">Projekti</a>
+      <a href="spektrum-control.html" class="nav__link">Spektrum Control</a>
+      <a href="o-nama.html" class="nav__link nav__link--active">O nama</a>
+      <a href="kontakt.html" class="nav__link">Kontakt</a>
+    </div>
+    <div class="nav__right">
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Promeni temu">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+      </button>
+      <a href="tel:+381XXXXXXX" class="nav__cta"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>Pozovi odmah</a>
+      <button class="nav__toggle" onclick="document.querySelector('.nav__links').classList.toggle('open')" aria-label="Meni"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="section__tag">Porodična firma od 1992.</div>
+    <h1 class="section__title" style="font-size:clamp(2.5rem,5vw,3.5rem);">O <span>nama</span></h1>
+    <p class="section__subtitle">Više od tri decenije posvećenosti zaštiti od požara. Porodična firma koja veruje u kvalitet, tradiciju i dugotrajan partnerski odnos.</p>
+  </div>
+</section>
+
+<!-- Story + Trust Card -->
+<section class="section">
+  <div class="container">
+    <div class="story-grid">
+      <div>
+        <h2 style="font-size:1.8rem;font-weight:800;margin-bottom:24px;">Naša priča počinje <span style="color:var(--brand-primary)">1992. godine</span></h2>
+        <p class="story__text">MBS Spektrum je preduzeće koje je osnovano davne 1992. godine i od tada se bavimo zaštitom od požara. U početku su poslovi su bili na nivou kontrolisanja, a kasnije kako smo se razvijali i pratili potrebe tržišta, širili smo mrežu poslova koje obavljamo.</p>
+        <p class="story__text">Danas pokrivamo ceo spektar poslova od kontrolisanja, preko projektovanja, poslova referenta pa do izvođenja radova u oblasti zaštite od požara.</p>
+        <p class="story__text"><strong>MBS Spektrum danas broji 10 zaposlenih</strong> i svojom stručnošću mogu da se nose sa svim izazovima i zahtevima klijenata.</p>
+        <p class="story__text">Kao <strong>porodična firma</strong>, posebno cenimo svakog našeg klijenta i zaposlenog. Verujemo da je svaki zaposleni deo naše velike porodice, a njihova stručnost i predanost su temelj našeg uspeha kroz decenije.</p>
+        <p class="story__text">Naši je na prvom mestu <strong>profesionalnost i dugotrajna saradnja</strong> zasnovana na poverenju, kvalitetu i međusobnom poštovanju. Ne težimo samo poslovnom uspehu, već izgradnji trajnih partnerskih odnosa koji se zasnivaju na iskrenosti i posvećenosti bezbednosti naših klijenata.</p>
+        <p class="story__text"><strong>Vaša sigurnost je naša odgovornost.</strong></p>
+      </div>
+      <div>
+        <div class="hero__visual">
+          <div class="trust-header">
+            <span class="trust-header__title">MBS Spektrum — Operativni status</span>
+            <span class="trust-header__status">Aktivan</span>
+          </div>
+          <div class="trust-grid">
+            <div class="trust-card">
+              <div class="trust-card__icon trust-card__icon--blue"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+              <div class="trust-card__label">Osnivanje</div>
+              <div class="trust-card__value">1992</div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-card__icon trust-card__icon--amber"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg></div>
+              <div class="trust-card__label">Tim</div>
+              <div class="trust-card__value">10 <span style="font-size:0.5em;color:var(--text-muted)">ljudi</span></div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-card__icon trust-card__icon--red"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg></div>
+              <div class="trust-card__label">Projekata</div>
+              <div class="trust-card__value trust-card__value--accent">500+</div>
+            </div>
+            <div class="trust-card">
+              <div class="trust-card__icon trust-card__icon--green"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+              <div class="trust-card__label">Status</div>
+              <div class="trust-card__value" style="color:var(--success)">Aktivan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header section__header--center">
+      <div class="section__tag">Naši principi</div>
+      <h2 class="section__title">Naše <span>vrednosti</span></h2>
+      <p class="section__subtitle">Vrednosti koje nas definišu i vode naš rad svakoga dana.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card"><div class="value-card__number">01</div><h3 class="value-card__title">Porodična firma</h3><p class="value-card__desc">Osnovani kao porodična firma, negujemo bliske odnose sa svakim klijentom i vrednosti porodične tradicije u poslu.</p></div>
+      <div class="value-card"><div class="value-card__number">02</div><h3 class="value-card__title">Dugotrajno partnerstvo</h3><p class="value-card__desc">Verujemo u izgradnju dugoročnih partnerstava zasnovanih na poverenju, kvalitetu i međusobnom poštovanju.</p></div>
+      <div class="value-card"><div class="value-card__number">03</div><h3 class="value-card__title">Profesionalnost</h3><p class="value-card__desc">Naš tim stručnjaka posvećen je najvišim standardima profesionalnosti i odgovornosti u svemu što radimo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="section">
+  <div class="container">
+    <div class="section__header section__header--center">
+      <div class="section__tag">Naš put</div>
+      <h2 class="section__title">Naša <span>evolucija</span></h2>
+      <p class="section__subtitle">Ključni momenti u razvoju MBS Spektrum-a kroz decenije.</p>
+    </div>
+    <div style="max-width:600px;margin:0 auto;">
+      <div class="timeline">
+        <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">1992</div><div class="timeline__text">Osnivanje kompanije MBS Spektrum</div></div>
+        <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">1995</div><div class="timeline__text">Proširenje na usluge kontrolisanja</div></div>
+        <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">2000</div><div class="timeline__text">Uvođenje usluga projektovanja</div></div>
+        <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">2010</div><div class="timeline__text">Proširenje tima na 10 stručnjaka</div></div>
+        <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__year">2024</div><div class="timeline__text">Preko 500 završenih projekata i razvoj SPEKTRUM Control platforme</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="section__tag">Budimo partneri</div>
+    <h2 class="cta__title">Želite da <span>sarađujete sa nama?</span></h2>
+    <p class="cta__desc">Kontaktirajte nas i postanite deo naše priče. Verujemo u dugotrajan partnerski odnos zasnovan na poverenju i kvalitetu.</p>
+    <div class="cta__actions">
+      <a href="kontakt.html" class="btn btn--primary"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>Kontaktiraj nas</a>
+      <a href="projekti.html" class="btn btn--outline">Pogledaj projekte &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div><div class="footer__brand-name"><img src="assets/logo.png" alt=""> MBS SPEKTRUM</div><p class="footer__brand-desc">MBS Spektrum d.o.o. — Porodična firma osnovana 1992. godine.</p></div>
+      <div><div class="footer__col-title">Kontakt</div><div class="footer__links"><span class="footer__link">Sremska Mitrovica</span><a href="tel:+381XXXXXXX" class="footer__link">+381 XX XXX XXXX</a></div></div>
+      <div><div class="footer__col-title">Usluge</div><div class="footer__links"><a href="usluge.html" class="footer__link">Kontrolisanja</a><a href="usluge.html" class="footer__link">Prodaja opreme</a><a href="usluge.html" class="footer__link">Projektovanje</a></div></div>
+      <div><div class="footer__col-title">Radno vreme</div><div class="footer__links"><span class="footer__link">Pon–Pet: 08:00–16:00</span><span class="footer__link">Hitne intervencije: 24/7</span></div></div>
+    </div>
+    <div class="footer__bottom"><span>&copy; 2024 MBS Spektrum d.o.o. | Zaštita od požara od 1992. godine</span><span>Sremska Mitrovica, Srbija</span></div>
+  </div>
+</footer>
+
+<script>
+function toggleTheme(){const h=document.documentElement;const n=h.getAttribute('data-theme')==='dark'?'light':'dark';h.setAttribute('data-theme',n);localStorage.setItem('mbs-theme',n)}
+(function(){if(localStorage.getItem('mbs-theme')==='dark')document.documentElement.setAttribute('data-theme','dark')})();
+</script>
+</body>
+</html>
