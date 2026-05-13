@@ -1325,7 +1325,102 @@ button { font-family: var(--font-body); }
 
 /* --- Print --- */
 @media print {
-  .nav, .theme-toggle, .cta, .btn { display: none; }
+  .nav, .theme-toggle, .cta, .btn, .portal-access { display: none; }
   body { color: #000; background: #fff; }
   .section { padding: 40px 0; }
+}
+
+/* ============================================
+   PORTAL ACCESS — for existing Spektrum Control users
+   Compact utility band, visually subordinate to demo CTA below.
+   Lives only on spektrum-control.html, between Tehnologija and CTA.
+   ============================================ */
+.portal-access {
+  padding: 56px 0;
+  background: var(--bg-elevated);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.portal-access__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.portal-access__text {
+  flex: 1 1 360px;
+  min-width: 0;
+}
+
+.portal-access__eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brand-primary);
+  background: rgba(30, 58, 95, 0.08);
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+[data-theme="dark"] .portal-access__eyebrow {
+  color: var(--brand-accent);
+  background: rgba(217, 119, 6, 0.12);
+}
+
+.portal-access__title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.portal-access__desc {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 540px;
+  line-height: 1.55;
+}
+
+.portal-access__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 22px;
+  background: var(--brand-primary);
+  color: var(--text-inverse);
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.portal-access__btn:hover {
+  background: var(--brand-primary-light);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(30, 58, 95, 0.25);
+}
+.portal-access__btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+[data-theme="dark"] .portal-access__btn {
+  background: var(--brand-accent);
+}
+[data-theme="dark"] .portal-access__btn:hover {
+  background: var(--brand-accent-light, #b9650a);
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.3);
+}
+
+@media (max-width: 720px) {
+  .portal-access { padding: 44px 0; }
+  .portal-access__inner { gap: 24px; }
+  .portal-access__title { font-size: 20px; }
+  .portal-access__btn { width: 100%; justify-content: center; }
 }
